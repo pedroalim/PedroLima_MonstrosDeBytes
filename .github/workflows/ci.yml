@@ -40,7 +40,7 @@ jobs:
       - name: Exibir mensagem final de sucesso
         if: ${{ success() }}
         run: |
-          echo 'CI executado com sucesso!'
+          echo 'CI executado com sucesso!!!'
           echo 'Robô compilado, verificado com Checkstyle e analisado com SpotBugs.'
           echo 'Arquivo usado: Robozinho.java'
           echo 'Aluno: Pedro Ramos de Lima'
