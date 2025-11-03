@@ -37,5 +37,11 @@ jobs:
           chmod +x spotbugs-4.8.3/bin/spotbugs
           ./spotbugs-4.8.3/bin/spotbugs -textui -effort:max -high -auxclasspath libs/robocode.jar build
 
-      - name: Mensagem final
-        run: echo "Pipeline finalizado com sucesso! Código analisado e aprovado."
+      - name: Exibir mensagem final de sucesso
+        if: ${{ success() }}
+        run: |
+          echo 'CI executado com sucesso!'
+          echo 'Robô compilado, verificado com Checkstyle e analisado com SpotBugs.'
+          echo 'Arquivo usado: Robozinho.java'
+          echo 'Aluno: Pedro Ramos de Lima'
+          echo 'Parabéns, pipeline completa e aprovada!'
