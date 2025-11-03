@@ -7,10 +7,9 @@ import java.awt.geom.Point2D;
 // API help : https://robocode.sourceforge.io/docs/robocode/robocode/Robot.html
 
 /**
- * PrimeiroRobo - a robot by (JGuilherme)
- * Push para teste de webhook / alterado package
+ * Robozinho - a robot by (Pedrolima)
  */
-public class PrimeiroRobo extends AdvancedRobot
+public class Robozinho extends AdvancedRobot
 {
 	// Estado do inimigo
 	private double lastEnemyEnergy = 100.0;
